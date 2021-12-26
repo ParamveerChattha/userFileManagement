@@ -1,0 +1,40 @@
+// tabs & large phones
+$screen-sm-min: 576px;
+
+// tabs and phones - potrait mode
+$screen-md-min: 769px;
+
+//tabs
+$screen-lg-min: 992px;
+
+//computers
+$screen-xl-min: 1200px;
+
+// mixins
+//small
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+//medium
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+//large
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// extra large
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
