@@ -79,12 +79,12 @@ const UserInputForm = ({ step, setStep, userDetails, setUserDetails }) => {
           onChange={(e) => handleUser(e)}
           error={errors.phoneNumber}
         />
-        <div>
+        <div style={{ display: "inline-flex" }}>
           <Button
             variant="danger"
             type="submit"
             onClick={handlePrev}
-            style={{ width: "15em", marginLeft: "1em" }}
+            style={{ width: "14em" }}
           >
             Previous
           </Button>
@@ -92,7 +92,7 @@ const UserInputForm = ({ step, setStep, userDetails, setUserDetails }) => {
             variant="primary"
             type="submit"
             className={styles.NextButton}
-            style={{ width: "15em", marginLeft: "3em" }}
+            style={{ width: "14em", marginLeft: "2em" }}
           >
             Next
           </Button>
