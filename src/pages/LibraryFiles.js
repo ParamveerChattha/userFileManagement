@@ -8,6 +8,7 @@ const FilesInDisplay = ({ step, setStep, setFiles }) => {
   const [libraryFiles, setLibraryFiles] = useState([]);
   const [, setError] = useState("");
   const [filesSelected, setFilesSelected] = useState([]);
+  const [showError, setShowError] = useState(false);
 
   useEffect(() => {
     axios
@@ -24,6 +25,7 @@ const FilesInDisplay = ({ step, setStep, setFiles }) => {
     event.preventDefault();
     setFiles(filesSelected);
     filesSelected.length > 0 && setStep(step + 1);
+    filesSelected.length === 0 && setShowError(true);
   }
 
   return (
@@ -35,6 +37,7 @@ const FilesInDisplay = ({ step, setStep, setFiles }) => {
         filesSelected={filesSelected}
         showUpload={true}
       />
+      {showError && <span className={styles.Error}>no file is selected</span>}
       <div style={{ display: "inline-flex", alignContent: "end" }}>
         <Button
           type="submit"

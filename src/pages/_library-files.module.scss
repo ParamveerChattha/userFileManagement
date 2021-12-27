@@ -1,7 +1,13 @@
+@import "../styles/variables";
 .NextButton {
   text-align: center;
   margin-left: 7rem;
   width: 15em;
   margin-top: 1em;
   margin-right: 5em;
+}
+span {
+  color: $danger;
+  font-size: 1em;
+  margin-left: 11rem;
 }
