@@ -1,5 +1,5 @@
 import styles from "./_popup.module.scss";
-import { Close } from "../../assets/svg";
+import Close from "../../assets/close.png";
 import { useState } from "react";
 
 const Popup = ({ show, setStep }) => {

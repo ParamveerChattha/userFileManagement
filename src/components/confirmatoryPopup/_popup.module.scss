@@ -33,16 +33,13 @@
         top: 0;
         right: 0;
         background: transparent;
+        margin-top: -1.2rem;
+        margin-right: -1rem;
 
         img {
-          width: 1rem;
-          height: auto;
+          width: 0.5rem;
+          height: 0.4rem;
           transition: all 0.3s;
-        }
-        &:hover {
-          img {
-            transform: scale(1.1);
-          }
         }
       }
     }
