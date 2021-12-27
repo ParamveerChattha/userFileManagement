@@ -81,12 +81,12 @@ const UserInputForm = ({ step, setStep, userDetails, setUserDetails }) => {
         />
         <div style={{ display: "inline-flex" }}>
           <Button
-            variant="danger"
+            variant="warning"
             type="submit"
             onClick={handlePrev}
             style={{ width: "14em" }}
           >
-            Previous
+            Back
           </Button>
           <Button
             variant="primary"
