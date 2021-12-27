@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import FileDisplay from "../components/table/table";
-import styles from "./library-files.module.scss";
+import styles from "./_library-files.module.scss";
 
 const FilesInDisplay = ({ step, setStep, setFiles }) => {
   const [libraryFiles, setLibraryFiles] = useState([]);

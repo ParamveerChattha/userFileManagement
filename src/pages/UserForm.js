@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./user-input-form.scss";
+import styles from "./_user-input-form.scss";
 import Input from "../components/input";
 import { isValid } from "../utils/validation";
 import { Button } from "react-bootstrap";

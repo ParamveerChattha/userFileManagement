@@ -1,11 +1,11 @@
-import ManageFiles from "./components/manageFiles";
+import FormModal from "./components/modal";
 import Layout from "./components/layout";
 
 const App = () => {
   return (
     <>
       <Layout>
-        <ManageFiles />
+        <FormModal />
       </Layout>
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./layout.module.scss";
+import styles from "./_layout.module.scss";
 import { Bg } from "../../assets/svg";
 
 export const Layout = ({ children }) => (

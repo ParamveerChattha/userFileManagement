@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import FormSteps from "../form-steps";
-import styles from "./index.module.scss";
+import styles from "./_index.module.scss";
 
-const ManageFiles = () => {
+const FormModal = () => {
   let [step, setStep] = useState(0);
   let [files, setFiles] = useState();
   const [userDetails, setUserDetails] = useState();
@@ -16,7 +16,7 @@ const ManageFiles = () => {
   );
 
   return (
-    <div className={styles.Wizard}>
+    <div className={styles.FileDisplay}>
       <h4>
         Step {step + 1}/{steps.length}
       </h4>
@@ -25,4 +25,4 @@ const ManageFiles = () => {
   );
 };
 
-export default ManageFiles;
+export default FormModal;

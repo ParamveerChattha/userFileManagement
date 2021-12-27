@@ -1,7 +1,7 @@
 import { Table } from "react-bootstrap";
 import _ from "lodash";
 import { useEffect, useState } from "react";
-import styles from "./table.module.scss";
+import styles from "./_table.module.scss";
 
 const FileDisplay = ({
   libraryFiles,

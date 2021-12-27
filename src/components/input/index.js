@@ -1,4 +1,4 @@
-import styles from "./input.module.scss";
+import styles from "./_input.module.scss";
 
 const Input = ({ error, ...rest }) => {
   return (

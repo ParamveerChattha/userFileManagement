@@ -1,4 +1,4 @@
-import styles from "./popup.module.scss";
+import styles from "./_popup.module.scss";
 import { Close } from "../../assets/svg";
 import { useState } from "react";
 
